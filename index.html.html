@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Autoplay Responsive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .video-container {
+      width: 100%;
+      max-width: 400px;  /* biar pas di HP */
+      aspect-ratio: 16 / 9; /* otomatis hitung tinggi */
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      background: #000;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* biar ga ketarik */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="ajengbnr.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+  </div>
+
+</body>
+</html>
